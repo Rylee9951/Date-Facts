@@ -5,6 +5,7 @@ const chalk = require('chalk');
 console.log("It is", chalk.blue(moment().format("dddd, MMMM Do YYYY, h:mm:ss a")));
 console.log("It is", chalk.magenta(moment().format("DDDo")), "day of the year.");
 console.log("It is", chalk.cyan(moment().unix()), "seconds into the day.");
+// moment.duration("12:10:12: PM", "HH:mm:ss: A").asSeconds();
 
 if(moment().isDST()){
     console.log("It " + chalk.green("is") + " during Daylight Savings Time.");
